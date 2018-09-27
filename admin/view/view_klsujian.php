@@ -15,7 +15,7 @@ include "../../library/function_form.php";
 create_title("sort-by-attributes", "Manajemen Kelas Per Ujian");
 
 //Membuat header dan footer tabel
-create_table(array("Judul Ujian", "Kelas", "Aksi"));
+create_table(array("Judul Ujian", "Guru Mapel", "Kelas", "Aksi"));
 
 //Membuat form edit data
 open_form("modal_klsujian", "return save_data()");

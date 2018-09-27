@@ -17,11 +17,14 @@ if($_GET['action'] == "table_data"){
          if($rk['aktif']=='Y') $class = 'btn-danger';
          else $class = 'btn-primary';
          $label .= '<a class="btn btn-sm '.$class.'" onclick="edit_data('.$rk['id_kelas'].','.$rk['id_ujian'].')">'.$rk['kelas'].'</a> ';
+         
+      $user = mysqli_fetch_array(mysqli_query($mysqli, "SELECT * FROM user WHERE id_user='$r[id_user]'"));
       }
       
       $row = array();
       $row[] = $no;
       $row[] = $r['judul'];
+      $row[] = $user['nama'];
       $row[] = $label;
       $data[] = $row;
       $no++;

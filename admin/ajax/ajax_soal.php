@@ -71,7 +71,7 @@ elseif($_GET['action'] == "update"){
       pilihan_3 = '$pil_3',
       pilihan_4 = '$pil_4',
       pilihan_5 = '$pil_5',
-      = '$_POST[kunci]' WHERE id_soal='$_POST[id]'");
+     kunci = '$_POST[kunci]' WHERE id_soal='$_POST[id]'");
    echo "ok";
 }
 

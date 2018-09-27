@@ -19,7 +19,7 @@ create_title("edit", "Manajemen Ujian");
 create_button("success", "plus-sign", "Tambah", "btn-add", "form_add()");
 
 //membuat header dan footer tabel
-create_table(array("Judul", "Nama Mapel", "Tanggal", "Waktu", "Jml. Soal", "Pengampu", "Aksi"));
+create_table(array("Judul", "Nama Mapel", "Soal Masuk","Tanggal", "Waktu", "Jml. Soal", "Pengampu", "Aksi"));
 
 //membuat form tambah dan edit data
 open_form("modal_ujian", "return save_data()");

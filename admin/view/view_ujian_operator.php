@@ -13,5 +13,5 @@ create_title("edit", "Manajemen Ujian");
 
 echo '<hr/><div class="alert alert-info"><p>Klik pada nama kelas untuk mengaktifkan atau menon-aktifkan ujian pada kelas tersebut!</p></div>';
 
-create_table(array("Judul Ujian", "Kelas"));
+create_table(array("Judul Ujian", "Pengampu", "Kelas"));
 ?>

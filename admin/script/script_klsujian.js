@@ -20,7 +20,7 @@ function form_edit(id){
       success : function(data){
          $('#modal_klsujian form')[0].reset();
          $('#modal_klsujian').modal('show');
-         $('.modal-title').text('Edit Kelas Ujian');
+         $('.modal-title').text('Pilih Kelas Ujian');
 			
          $('#id').val(id);
          var kelas = data.kelas.split(',');

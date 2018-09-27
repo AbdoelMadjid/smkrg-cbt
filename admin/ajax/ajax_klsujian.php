@@ -11,6 +11,7 @@ if($_GET['action'] == "table_data"){
    while($r = mysqli_fetch_array($query)){
       $qkelas = mysqli_query($mysqli, "SELECT * FROM kelas t1, kelas_ujian t2 WHERE t1.id_kelas=t2.id_kelas AND t2.id_ujian='$r[id_ujian]'");
       $label = "";
+        $user = mysqli_fetch_array(mysqli_query($mysqli, "SELECT * FROM user WHERE id_user='$r[id_user]'"));
       while($rk = mysqli_fetch_array($qkelas)){
         $label .= '<span class="label label-info">'.$rk['kelas'].'</span> ';
       }
@@ -18,6 +19,7 @@ if($_GET['action'] == "table_data"){
       $row = array();
       $row[] = $no;
       $row[] = $r['judul'];
+      $row[] = $user['nama'];
       $row[] = $label;
       $row[] = create_action($r['id_ujian'], true, false);
       $data[] = $row;

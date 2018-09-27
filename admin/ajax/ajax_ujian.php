@@ -11,10 +11,17 @@ if($_GET['action'] == "table_data"){
    $no = 1;
    while($r = mysqli_fetch_array($query)){
       $user = mysqli_fetch_array(mysqli_query($mysqli, "SELECT * FROM user WHERE id_user='$r[id_user]'"));
+         
+         $qsoal = mysqli_query($mysqli, "SELECT * FROM soal WHERE id_ujian='$r[id_ujian]'");
+   $btn_soal =mysqli_num_rows($qsoal);
+
+
+
       $row = array();
       $row[] = $no;
       $row[] = $r['judul'];
       $row[] = $r['nama_mapel'];
+      $row[] = $btn_soal;
       $row[] = tgl_indonesia($r['tanggal']);
       $row[] = $r['waktu'].' menit';
       $row[] = $r['jml_soal'];
