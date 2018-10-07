@@ -31,17 +31,20 @@ while($r = mysqli_fetch_array($query)){
 		
    echo"<td class='box' width='335'>
 
-<table width='100%' style='width: 330px' cellspacing='0'>
+<table width='100%' style='width: 330px height:300px' cellspacing='0'>
    
 <tr class='header'>
-   <td width='30' align='center'>
-      <img src='../../images/logo.png' width='50'>
+   <td>
+    <img src='../../images/logo.png' width='80' height='70'>
    </td>
-   <td width='130' align='center' valign='middle' style='padding: 5px 30px;'>
-   <b>KARTU PESERTA</b>
-   <b>ULANGAN TENGAH SEMESTER (UTS)</b>
-   <b>SMK NEGERI 1 KRAGILAN</b>
+   <td width='180' style='padding: 3px 20px;'>
+   <p>
+   ULANGAN TENGAH SEMESTER 
+   SMK NEGERI 1 KRAGILAN CBT18                                         
+   Jl. Raya Serang - Jakarta Km.13</p>
+   
    </td>
+
 </tr>
 				
 <tr><td>Nama</td><td>: $r[nama]</td></tr>

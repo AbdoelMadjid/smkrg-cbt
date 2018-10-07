@@ -8,7 +8,6 @@ if(empty($_SESSION['username']) or empty($_SESSION['password']) ){
 
 $kelas = mysqli_fetch_array(mysqli_query($mysqli, "SELECT * FROM kelas WHERE id_kelas='$_SESSION[kelas]'"));
 $ujian = mysqli_fetch_array(mysqli_query($mysqli, "SELECT * FROM ujian WHERE id_ujian='$_GET[ujian]'"));
-$user = mysqli_fetch_array(mysqli_query($mysqli, "SELECT * FROM user WHERE id_user='$ujian[id_user]'"));
 ?>
 
 <h3 class="page-header"><i class="glyphicon glyphicon-user"></i> Data Siswa dan Ujian</h3>
@@ -27,10 +26,6 @@ $user = mysqli_fetch_array(mysqli_query($mysqli, "SELECT * FROM user WHERE id_us
 <div class="row">
    <div class="col-md-3">Nama Mapel</div>
    <div class="col-md-9">: <b><?= $ujian['nama_mapel']; ?></b></div>
-</div><br/>
-<div class="row">
-   <div class="col-md-3">Guru Mapel</div>
-   <div class="col-md-9">: <b><?= $user['nama']; ?></b></div>
 </div><br/>
 <div class="row">
    <div class="col-md-3">Jml. Soal</div>

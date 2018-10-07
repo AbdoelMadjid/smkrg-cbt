@@ -54,7 +54,7 @@ $(function(){
 <form class="login-form">   
    <div class="input-group">
       <div class="input-group-addon"><i class="glyphicon glyphicon-user"></i></div>
-      <input type="text" name="username" placeholder="NIS" autofocus class="form-control">
+      <input type="text" name="username" placeholder="Username" autofocus class="form-control">
    </div><br/>
 	
    <div class="input-group">
