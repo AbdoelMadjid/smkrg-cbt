@@ -39,7 +39,7 @@ while($r = mysqli_fetch_array($query)){
    </td>
    <td width='180' style='padding: 3px 20px;'>
    <p>
-   ULANGAN TENGAH SEMESTER 
+   PENILAIAN AKHIR SEMESTER 
    SMK NEGERI 1 KRAGILAN CBT18                                         
    Jl. Raya Serang - Jakarta Km.13</p>
    
